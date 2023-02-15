@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "bim"
+version = "0.1.0"
+description = ""
+authors = ["Jakob Hauser <jakob.e.hauser@protonmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.294"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
