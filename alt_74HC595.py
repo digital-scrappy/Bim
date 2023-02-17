@@ -47,6 +47,7 @@ def shift_update(input,data,clock,latch):
   for i in range(7, -1, -1):
     GPIO.output(clock,0)
     GPIO.output(data, int(input[i]))
+    print(int(input[i]))
     GPIO.output(clock,1)
   
   #put latch up to store data on register
@@ -57,7 +58,7 @@ def shift_update(input,data,clock,latch):
 def bools_to_str(bools):
     out = ""
     for b in bools:
-        out += "1" if b else 0
+        out += "1" if b else "0"
 
     return out
 
